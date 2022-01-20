@@ -43,7 +43,7 @@ def main():
             if _func == functions[0]:
                 bounds = [(-5.12, 5.12), (-5.12, 5.12)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Rastrigin, bounds, strategy=strategy)
+                    result = differential_evolution(func.Rastrigin, bounds, strategy=strategy,disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -51,7 +51,7 @@ def main():
             if _func == functions[1]:
                 bounds = [(-5,5), (-5,5)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Ackley, bounds, strategy=strategy)
+                    result = differential_evolution(func.Ackley, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -59,7 +59,7 @@ def main():
             if _func == functions[2]:
                 bounds = [(-2,10), (-2,10)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Rosenbrock, bounds, strategy=strategy)
+                    result = differential_evolution(func.Rosenbrock, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -67,7 +67,7 @@ def main():
             if _func == functions[3]:
                 bounds = [(-4.5,4.5), (-4.5,4.5)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Beale, bounds, strategy=strategy)
+                    result = differential_evolution(func.Beale, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -75,7 +75,7 @@ def main():
             if _func == functions[4]:
                 bounds = [(-2,2), (-2,2)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Goldstein_Price, bounds, strategy=strategy)
+                    result = differential_evolution(func.Goldstein_Price, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -83,7 +83,7 @@ def main():
             if _func == functions[5]:
                 bounds = [(-10,10), (-10,10)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Booth, bounds, strategy=strategy)
+                    result = differential_evolution(func.Booth, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -92,7 +92,7 @@ def main():
             if _func == functions[6]:
                 bounds = [(-15,-5), (-3,3)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Bukin, bounds, strategy=strategy)
+                    result = differential_evolution(func.Bukin, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -100,7 +100,7 @@ def main():
             if _func == functions[7]:
                 bounds = [(-10,10), (-10,10)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Matyas, bounds, strategy=strategy)
+                    result = differential_evolution(func.Matyas, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -108,7 +108,7 @@ def main():
             if _func == functions[8]:
                 bounds = [(-3,3), (-3,3)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Sphere, bounds, strategy=strategy)
+                    result = differential_evolution(func.Sphere, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
@@ -116,7 +116,7 @@ def main():
             if _func == functions[9]:
                 bounds = [(-5,5), (-5,5)]
                 for strategy in strategies:
-                    result = differential_evolution(func.Himmelblau, bounds, strategy=strategy)
+                    result = differential_evolution(func.Himmelblau, bounds, strategy=strategy, disp=True, polish=True, updating='immediate', popsize=250)
                     st.write('Wyniki dla schematu mutacji: ', strategy)
                     st.table(result)
                     st.markdown('---')
